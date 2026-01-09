@@ -62,12 +62,17 @@ const Footer = () => {
             <ul className="space-y-2 text-sm text-muted-foreground">
               {footerConfig.quickLinks.map((item) => (
                 <li key={item}>
-                  <a
-                    href={`#${item.toLowerCase()}`}
-                    className="hover:text-primary transition-colors"
+                  <button
+                    onClick={() => {
+                      const element = document.getElementById(item.toLowerCase());
+                      if (element) {
+                        element.scrollIntoView({ behavior: "smooth" });
+                      }
+                    }}
+                    className="hover:text-primary transition-colors text-left"
                   >
                     {item}
-                  </a>
+                  </button>
                 </li>
               ))}
             </ul>
