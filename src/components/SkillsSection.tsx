@@ -105,45 +105,6 @@ const SkillsSection = () => {
             </motion.div>
           ))}
         </div>
-
-        {/* Core Competencies */}
-        <motion.div
-          initial={{ opacity: 0, y: 20 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          viewport={{ once: true }}
-          transition={{ duration: 0.5, delay: 0.4 }}
-          className="max-w-4xl mx-auto"
-        >
-          <Card className="glass-card">
-            <CardHeader className="pb-4">
-              <CardTitle className="text-lg font-semibold text-foreground flex items-center gap-2">
-                <Brain className="w-5 h-5 text-primary" />
-                Core Competencies
-              </CardTitle>
-            </CardHeader>
-            <CardContent>
-              <div className="flex flex-wrap gap-3">
-                {skillsConfig.competencies.map((skill, index) => (
-                  <motion.div
-                    key={skill}
-                    initial={{ opacity: 0, x: -10 }}
-                    whileInView={{ opacity: 1, x: 0 }}
-                    viewport={{ once: true }}
-                    transition={{ delay: index * 0.05 }}
-                  >
-                    <Badge
-                      variant="outline"
-                      className="text-sm font-medium px-4 py-1.5 border-primary/30 hover:bg-primary/5 transition-colors"
-                    >
-                      <Zap className="w-3 h-3 mr-1.5 text-primary" />
-                      {skill}
-                    </Badge>
-                  </motion.div>
-                ))}
-              </div>
-            </CardContent>
-          </Card>
-        </motion.div>
       </div>
     </section>
   );
