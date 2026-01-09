@@ -44,7 +44,7 @@ const ThemeToggle = () => {
       variant="ghost"
       size="icon"
       onClick={() => setIsDark(!isDark)}
-      className="relative w-10 h-10 rounded-full bg-secondary/50 backdrop-blur-sm hover:bg-secondary"
+      className="relative w-10 h-10 rounded-full bg-secondary backdrop-blur-sm hover:bg-secondary/80 border border-border"
       aria-label={isDark ? "Switch to light mode" : "Switch to dark mode"}
     >
       <AnimatePresence mode="wait" initial={false}>
@@ -56,7 +56,7 @@ const ThemeToggle = () => {
             exit={{ scale: 0, rotate: 90, opacity: 0 }}
             transition={{ duration: 0.2 }}
           >
-            <Moon className="w-5 h-5 text-accent" />
+            <Moon className="w-5 h-5 text-foreground" />
           </motion.div>
         ) : (
           <motion.div
@@ -66,14 +66,14 @@ const ThemeToggle = () => {
             exit={{ scale: 0, rotate: -90, opacity: 0 }}
             transition={{ duration: 0.2 }}
           >
-            <Sun className="w-5 h-5 text-accent" />
+            <Sun className="w-5 h-5 text-foreground" />
           </motion.div>
         )}
       </AnimatePresence>
       
       {/* Glow effect on hover */}
       <motion.div
-        className="absolute inset-0 rounded-full bg-accent/20 blur-md"
+        className="absolute inset-0 rounded-full bg-primary/20 blur-md pointer-events-none"
         initial={{ opacity: 0, scale: 0.8 }}
         whileHover={{ opacity: 1, scale: 1.2 }}
         transition={{ duration: 0.2 }}
