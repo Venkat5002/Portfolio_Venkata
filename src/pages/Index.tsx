@@ -9,7 +9,6 @@ import Footer from "@/components/Footer";
 import AIAssistant from "@/components/AIAssistant";
 import SEOHead from "@/components/SEOHead";
 import LoadingSpinner from "@/components/LoadingSpinner";
-import ParticleBackground from "@/components/ParticleBackground";
 
 const Index = () => {
   const [isLoading, setIsLoading] = useState(true);
@@ -28,11 +27,10 @@ const Index = () => {
   }
 
   return (
-    <div className="min-h-screen bg-background relative">
-      <ParticleBackground />
+    <div className="min-h-screen bg-background">
       <SEOHead />
       <Navbar />
-      <main className="relative z-10">
+      <main>
         <HeroSection />
         <section id="experience">
           <ExperienceSection />
