@@ -35,7 +35,7 @@ export const siteConfig = {
     degree: "B.Tech in Computer Science & Engineering",
     year: "2023 - 2027 (Expected)",
     location: "Hyderabad, India",
-    cgpa: "8.82",
+    cgpa: "8.72",
   },
 
   // Previous Education
