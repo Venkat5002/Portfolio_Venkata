@@ -35,7 +35,7 @@ export const siteConfig = {
     degree: "B.Tech in Computer Science & Engineering",
     year: "2023 - 2027 (Expected)",
     location: "Hyderabad, India",
-    cgpa: "8.82",
+    cgpa: "8.72",
   },
 
   // Previous Education
@@ -57,7 +57,7 @@ export const siteConfig = {
 
   // Stats displayed in hero
   stats: {
-    cgpa: "8.82",
+    cgpa: "8.72",
     projects: "3+",
     certifications: "3+",
     year: "3rd Year",
