@@ -57,7 +57,7 @@ export const siteConfig = {
 
   // Stats displayed in hero
   stats: {
-    cgpa: "8.82",
+    cgpa: "8.72",
     projects: "3+",
     certifications: "3+",
     year: "3rd Year",
