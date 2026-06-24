@@ -7,7 +7,7 @@ export const siteConfig = {
   // Personal Information
   name: "V Venkata Rupin",
   shortName: "Rupin",
-  title: "3rd Year B.Tech Student",
+  title: "4th Year B.Tech Student",
   subtitle: "Aspiring Software Engineer",
   tagline: "Passionate about building efficient software and practical AI applications",
   
@@ -60,7 +60,7 @@ export const siteConfig = {
     cgpa: "8.72",
     projects: "3+",
     certifications: "3+",
-    year: "3rd Year",
+    year: "4th Year",
   },
 
   // Availability status
