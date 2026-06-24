@@ -44,7 +44,13 @@ const ContactSection = () => {
     try {
       // For now, open mailto with the form data
       const mailtoLink = `mailto:${siteConfig.contact.email}?subject=${encodeURIComponent(formData.subject || "Portfolio Contact")}&body=${encodeURIComponent(`From: ${formData.firstName} ${formData.lastName}\nEmail: ${formData.email}\n\n${formData.message}`)}`;
-      window.open(mailtoLink, "_blank");
+      const a = document.createElement("a");
+      a.href = mailtoLink;
+      a.target = "_blank";
+      a.rel = "noopener noreferrer";
+      document.body.appendChild(a);
+      a.click();
+      document.body.removeChild(a);
       
       toast({
         title: "Email client opened!",
