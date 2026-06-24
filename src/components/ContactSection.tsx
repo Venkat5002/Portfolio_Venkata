@@ -225,7 +225,6 @@ const ContactSection = () => {
                       </label>
                       <Input 
                         id="firstName" 
-                        placeholder="John" 
                         value={formData.firstName}
                         onChange={handleInputChange}
                         required
@@ -237,7 +236,6 @@ const ContactSection = () => {
                       </label>
                       <Input 
                         id="lastName" 
-                        placeholder="Doe" 
                         value={formData.lastName}
                         onChange={handleInputChange}
                       />
@@ -250,7 +248,6 @@ const ContactSection = () => {
                     <Input 
                       id="email" 
                       type="email" 
-                      placeholder="john@company.com" 
                       value={formData.email}
                       onChange={handleInputChange}
                       required
@@ -262,7 +259,6 @@ const ContactSection = () => {
                     </label>
                     <Input 
                       id="subject" 
-                      placeholder="Internship Opportunity" 
                       value={formData.subject}
                       onChange={handleInputChange}
                     />
@@ -273,7 +269,6 @@ const ContactSection = () => {
                     </label>
                     <Textarea
                       id="message"
-                      placeholder="Your message here..."
                       className="min-h-[120px] resize-none"
                       value={formData.message}
                       onChange={handleInputChange}
