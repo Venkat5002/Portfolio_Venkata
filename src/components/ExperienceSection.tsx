@@ -71,7 +71,7 @@ const ExperienceSection = () => {
                 <div className="grid sm:grid-cols-2 gap-3">
                   <div className="flex items-start gap-2 p-3 bg-muted/50 rounded-lg">
                     <BookOpen className="w-4 h-4 text-primary mt-0.5" />
-                    <span className="text-sm text-foreground">Currently in 3rd year, maintaining strong academic performance</span>
+                    <span className="text-sm text-foreground">Currently in 4th year, maintaining strong academic performance</span>
                   </div>
                   <div className="flex items-start gap-2 p-3 bg-muted/50 rounded-lg">
                     <Award className="w-4 h-4 text-primary mt-0.5" />
